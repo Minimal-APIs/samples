@@ -57,7 +57,13 @@ app.MapGet("/", () => "Hello World!");
 
 app.Run();
 ```
+Run your  `TodoApi` 
+```sh
+TodoApi> dotnet run
+```
+🧪**WIP**: Once your application has ran click on the `Now listening on: https://localhost:XXXX` the port number is randomly generated that why I XXXX in the port place.
 
+![dotnetrun](https://user-images.githubusercontent.com/2546640/130246226-038be324-07c0-473a-8d78-4af7902c3f65.gif)
 ## Create the database model
 
 1. Create a class that models the data we want to collect. The code for your TodoItem will go after `app.Run()`;
@@ -70,20 +76,3 @@ app.Run();
        public bool IsComplete { get; set; }
    }
    ```
-   The above model will be used for reading in JSON and storing todo items into the database.
-
-1. Add `using Microsoft.EntityFrameworkCore;` to the top of your `Program.cs file`.
-
-1. Below the TodoItem create a TodoDb class
-
-    ```csharp
-   class TodoDb : DbContext
-   {
-       public TodoDb(DbContextOptions options) : base(options) { }
-       public DbSet<TodoItem> Todos { get; set; }
-       protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-       {
-            optionsBuilder.UseInMemoryDatabase("Todos");
-        }
-    }
-    

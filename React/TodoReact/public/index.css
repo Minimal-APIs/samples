@@ -51,8 +51,8 @@ input[type="checkbox"] {
 
     #todoapp:before {
         content: '';
-        border-left: 1px solid #f5d6d6;
-        border-right: 1px solid #f5d6d6;
+        border-left: 1px solid #194350;
+        border-right: 1px solid #194350;
         width: 2px;
         position: absolute;
         top: 0;
@@ -625,7 +625,8 @@ body {
         font-size: 100px;
         font-weight: 100;
         text-align: center;
-        color: #F27781;
+        color: #194350;
+        font-family: 'Poppins', sans-serif;
         -webkit-text-rendering: optimizeLegibility;
         -moz-text-rendering: optimizeLegibility;
         text-rendering: optimizeLegibility;

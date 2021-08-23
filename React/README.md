@@ -59,7 +59,7 @@ app.Run();
 ```
 Run your  `TodoApi` 
 ```sh
-TodoApi> dotnet run
+TodoApi> dotnet watch run
 ```
 🧪**WIP**: Once your application has ran click on the `Now listening on: https://localhost:XXXX` the port number is randomly generated that why I XXXX in the port place.
 

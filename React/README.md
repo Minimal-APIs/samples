@@ -1,4 +1,4 @@
-# React Todo APP with Minimal APIs 
+# React Todo App with Minimal APIs 
 
 
 **Goal**: In this exercise, you will be building the backend of a TodoReact App using minimal APIs in C#. 
@@ -30,7 +30,7 @@ TodoReact> npm start
 
     > Keep this React app running as we'll need it once we build the back-end in the upcoming steps
 
-### Build the minimal AP backend 
+### Build the minimal API backend 
 **Create a new project**
 
 1. Create a new minimal API  and add the necessary packages in a new project called `TodoApi` 
